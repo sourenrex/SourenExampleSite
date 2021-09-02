@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- your layout style -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- site name -->
+	<title>Souren's Website</title>
+	
+	
+	<style>
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		  margin: 0;
+		}
+
+		/* Style the header */
+		.header{
+		  padding: 80px;
+		  background: #0547f0;
+		  color: white;
+		}
+		
+
+		/* Increase the font size of the h1 element */
+		.header h1 {
+		  font-size: 40px;
+		  font-family: Arial;
+		  display: inline;
+		  float: left;
+		}
+		.header h2 {
+		  font-size: 20px;
+		  font-family: Arial;
+		  float: right;
+		}
+		
+		
+		/* Style the top navigation bar */
+		.navbar {
+		  overflow: hidden; /* Hide overflow */
+		  background-color: #333; /* Dark background color */
+		}
+
+		/* Style the navigation bar links */
+		.navbar a {
+		  float: left; /* Make sure that the links stay side-by-side */
+		  display: block; /* Change the display to block, for responsive reasons (see below) */
+		  color: white; /* White text color */
+		  text-align: center; /* Center the text */
+		  padding: 14px 20px; /* Add some padding */
+		  text-decoration: none; /* Remove underline */
+		}
+
+		/* Right-aligned link */
+		.navbar a.right {
+		  float: right; /* Float a link to the right */
+		}
+
+		/* Change color on hover/mouse-over */
+		.navbar a:hover {
+		  background-color: #ddd; /* Grey background color */
+		  color: black; /* Black text color */
+		}
+		
+		
+		
+		/* Ensure proper sizing */
+		*{
+		  box-sizing: border-box;
+		}
+
+		/* Column container */
+		.row {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+
+		/* Create two unequal columns that sits next to each other */
+		/* Sidebar/left column */
+		.side {
+		  flex: 10%; /* Set the width of the sidebar */
+		  background-color: #f1f1f1; /* Grey background color */
+		  padding: 20px; /* Some padding */
+		}
+
+		/* Main column */
+		.main {
+		  flex: 90%; /* Set the width of the main content */
+		  background-color: #bebfba; /* White background color */
+		  padding: 20px; /* Some padding */
+		}
+		
+		
+		@media screen and (max-width: 700px) {
+		  .row {
+			flex-direction: column;
+		  }
+		}
+
+		@media screen and (max-width: 400px) {
+		  .navbar a {
+			float: none;
+			width: 100%;
+		  }
+		}
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Style inputs */
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+
+		input[type=submit] {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		/* Style the container/contact section */
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 10px;
+		}
+
+		/* Create two columns that float next to eachother */
+		.column {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		  padding: 20px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+
+		
+		
+		
+		
+		
+	</style>
+	
+</head>
+<body>
+	<div class="header">
+		<h1>Souren's Website</h1>
+		<h2> A site containing my projects and information about me.</h2>
+		<p> 2021 </p>
+	</div>
+	
+	<div class="navbar">
+		<a href="home.html" >Home</a>
+		<a href="about.htm">About Me</a>
+		<a href="projects.htm">Projects</a>
+	</div>
+	
+	<div style="text-align:center">
+	  <h2>Find out About me Souren Amini-Kisomi</h2>
+	  <p>Contact me bellow and check out the other sections</p>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+		<div class="column-66">
+		  <h1 class="xlarge-font"><b>Souren Amini-Kisomi</b></h1>
+		  <h1 class="large-font" style="color:#0000FF;"><b>Programming student at UofT St.George</b></h1>
+		  <img src="C:\Users\soure\Desktop\site\note\me.jpeg" style="width:10%">
+		  <p><span style="font-size:36px">I love programming. </span>Im an 18 year old undergraduate student studying compuational cognitive science at Uoft St.Gerorge.</p>
+		  <p>I have always had an interest in programming and AI especially, as a kid. This led to me quickly joining robotics clubs at my school and entering various robotics compitions. I even went further to share my love of AI and programming by pioneering a robotics club in grade 8.</p>
+		  <p>From there my intreset only grew in High school as I took any programming related courses and programs. I quickly began learning other languages and tools outside of school making games of various complexity so that I may show my friends durring lunch.</p>
+		  <p>I ended up creating many various games, simple AI simulations, encryption softwares, and more durring my time in highschool From that point I decided to presue progamming and went to UofT to begin studying computational cognitive science, which is study of AI and how to replicate human like AI through programming.</p>
+		  <p>So far I am enjoying my computer science classes and have an average of around 97 among my math and computer science related classes with an overall gpa of 3.93. My ability to achieve this does not come from natural skill or me knowing everything, but instead comes from my ability to admit when I don't know something. Once I admit that, there is nothing that will stop me from learning every inch of that topic/subject so that I may fully understand it.</p>
+		  <p>Programming is not a mark or a job to me but instead a passion. I may not know every inch of it, but once I set my eyes on a problem or something that I don't know I instantly dedicate my time and effort to building the tools and knowledge to not only complete the task but be able to complete future tasks like it. This is what allows me to quickly learn any part of programming and solve ay problem even when I have never done anything like it before.</p>
+		  <h1 class="xlarge-font"><b>If theres a programming problem I don't know, I will learn the proper way to solve it.</b></h1>
+		</div>
+	  </div>
+	</div>
+	
+	
+	<div class="container">
+	  <div style="text-align:center">
+		<h2>Contact Me</h2>
+		<p>Contact me at my email souren.aminikisomi@mail.utoronto.ca or contact me down bellow</p>
+	  </div>
+	  <div class="row">
+		<div class="column">
+		  <img src="C:\Users\soure\Desktop\site\note\me.jpeg" style="width:60%">
+		</div>
+		<div class="column">
+		  <form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<!-- Js in bottom so the DOM will laod Faster-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

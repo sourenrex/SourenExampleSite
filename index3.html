@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- your layout style -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- site name -->
+	<title>Souren's Website</title>
+	
+	
+	<style>
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		  margin: 0;
+		}
+
+		/* Style the header */
+		.header{
+		  padding: 80px;
+		  background: #0547f0;
+		  color: white;
+		}
+		
+
+		/* Increase the font size of the h1 element */
+		.header h1 {
+		  font-size: 40px;
+		  font-family: Arial;
+		  display: inline;
+		  float: left;
+		}
+		.header h2 {
+		  font-size: 20px;
+		  font-family: Arial;
+		  float: right;
+		}
+		
+		
+		/* Style the top navigation bar */
+		.navbar {
+		  overflow: hidden; /* Hide overflow */
+		  background-color: #333; /* Dark background color */
+		}
+
+		/* Style the navigation bar links */
+		.navbar a {
+		  float: left; /* Make sure that the links stay side-by-side */
+		  display: block; /* Change the display to block, for responsive reasons (see below) */
+		  color: white; /* White text color */
+		  text-align: center; /* Center the text */
+		  padding: 14px 20px; /* Add some padding */
+		  text-decoration: none; /* Remove underline */
+		}
+
+		/* Right-aligned link */
+		.navbar a.right {
+		  float: right; /* Float a link to the right */
+		}
+
+		/* Change color on hover/mouse-over */
+		.navbar a:hover {
+		  background-color: #ddd; /* Grey background color */
+		  color: black; /* Black text color */
+		}
+		
+		
+		
+		/* Ensure proper sizing */
+		*{
+		  box-sizing: border-box;
+		}
+
+		/* Column container */
+		.row {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+
+		/* Create two unequal columns that sits next to each other */
+		/* Sidebar/left column */
+		.side {
+		  flex: 10%; /* Set the width of the sidebar */
+		  background-color: #f1f1f1; /* Grey background color */
+		  padding: 20px; /* Some padding */
+		}
+
+		/* Main column */
+		.main {
+		  flex: 90%; /* Set the width of the main content */
+		  background-color: #bebfba; /* White background color */
+		  padding: 20px; /* Some padding */
+		}
+		
+		
+		@media screen and (max-width: 700px) {
+		  .row {
+			flex-direction: column;
+		  }
+		}
+
+		@media screen and (max-width: 400px) {
+		  .navbar a {
+			float: none;
+			width: 100%;
+		  }
+		}
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Style inputs */
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+
+		input[type=submit] {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		html {
+		  box-sizing: border-box;
+		}
+
+		*, *:before, *:after {
+		  box-sizing: inherit;
+		}
+
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  margin: 8px;
+		}
+
+		.about-section {
+		  padding: 50px;
+		  text-align: center;
+		  background-color: #474e5d;
+		  color: white;
+		}
+
+
+
+		.title {
+		  color: grey;
+		}
+
+		@media screen and (max-width: 650px) {
+		  .column {
+			width: 100%;
+			display: block;
+		  }
+		}
+
+
+
+
+
+		/* Style the container/contact section */
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 10px;
+		}
+
+		/* Create two columns that float next to eachother */
+		.column {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		  padding: 20px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+
+		
+		
+		
+		
+		
+	</style>
+	
+</head>
+<body>
+	<div class="header">
+		<h1>Souren's Website</h1>
+		<h2> A site containing my projects and information about me.</h2>
+		<p> 2021 </p>
+	</div>
+	
+	<div class="navbar">
+		<a href="index.html" >Home</a>
+		<a href="index2.html">About Me</a>
+		<a href="index3.html">Projects</a>
+	</div>
+	
+	<div class="about-section">
+	  <h1>Personal projects I have worked on over the years</h1>
+	</div>
+
+	<h2 style="text-align:center">My Skills and Projects</h2>
+	<div class="row">
+	  
+
+	  <div class="column">
+		<div class="card">
+		  <div class="container">
+			<h2>Skills</h2>
+			<img src="hammer.png" style="width:20%">
+			<p class="title">Programing tools, languages, and skills I know</p>
+			<p>-Programing languages known: Python, Java, HTML, CSS, C#.</p>
+			<p>-Tools: Git.hub, Unity, rep.lit, Git, Docker, Kubernetes </p>
+			<p>-Education: Uoft computational cognitive science: studying how AI works and how to create strong AI programs.</p>
+			<p>-Years of experience programing in and out of school.</p>
+			<p>-Help start a robotics program at Summer Institue, helped teach kids programming.</p>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="column">
+		<div class="card">
+		  <div class="container">
+			<h2>Project: Discord API bot</h2>
+			<img src="d.png" style="width:20%">
+			<p class="title">Hathor: A reponsive discord API</p>
+			<p>-Hathor is a bot I created using Python to allow users to play and save music for their friends from youtube within the discord client.</p>
+			<p>-The bot uses discord API along with Youtube API to read commands from any user within the discord app and get any video and its information from youtube.</p>
+			<p>-It also uses an online database to save user's playlists to be used over diffrent servers.</p>
+			<p>-The bot is currently being used by multiple servers and users and is hosted and online for people to use.</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="column">
+		<div class="card">
+		  <div class="container">
+			<h2>Project: Website</h2>
+			<img src="w.png" style="width:20%">
+			<p class="title">This website codded using HTML and CSS</p>
+			<p>-A responsive website made to showcase who I am and what I have done</p>
+			<p>-Codded using HTML and CSS to showcase said skill</p>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="column">
+		<div class="card">
+		  <div class="container">
+			<h2>Project: Executable Encryption Software</h2>
+			<img src="c.png" style="width:20%">
+			<p class="title">A software using python that can be downloaded that will encrypt files</p>
+			<p>-Software has a full visual compenent and is user friendly</p>
+			<p>-It will ask for the name of the file to encrypt or decrypt and will give an ecrypted/decrypted copy of said file.</p>
+			<p>-Uses a vigenere cypher to create an extremly hard to brute force encrypted file</p>
+		  </div>
+		</div>
+	  </div>
+	  
+	  
+	</div>
+
+
+	
+	<div class="container">
+	  <div style="text-align:center">
+		<h2>Contact Me</h2>
+		<p>Contact me at my email souren.aminikisomi@mail.utoronto.ca or contact me down bellow</p>
+	  </div>
+	  <div class="row">
+		<div class="column">
+		  <img src="me.jpeg" style="width:60%">
+		</div>
+		<div class="column">
+		  <form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+			<input type="button" onclick="alert ('if this was a hosted website it would send me the info, however so far this is only a test being hosted on github and can not send me the info (contact me instead)')" value="Submit">
+		  </form>
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<!-- Js in bottom so the DOM will laod Faster-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
